@@ -119,20 +119,20 @@ document.getElementById("btn-registrar").addEventListener("click", function() {
     // Validar que todos los campos estén llenos
     if (nombre === "" || apellido === "" || correo === "" || contrasena === "" || fechaNacimiento === "" || sexo === "") {
         Swal.fire({
-            title: "Error",
-            text: "Por favor, complete todos los campos",
-            icon: "error"
-        });
-    } else {
-        // Mostrar alerta de registro exitoso
-        Swal.fire({
             title: "¡Registro exitoso!",
             text: "Usuario ha sido registrado exitosamente.",
             imageUrl: "img/fondopokemon.jpg",
             imageWidth: 400,
             imageHeight: 200,
-            imageAlt: "Custom image"    
-
+            imageAlt: "Custom image"            
+        });
+    } else {
+        // Mostrar alerta de registro exitoso
+        Swal.fire({
+            title: "Error",
+            text: "Por favor, complete todos los campos",
+            icon: "error"
+                
         }).then(() => {
             // Redirigir al usuario a la página de inicio de sesión después de que se cierre la alerta
             window.location.href = "login.html";

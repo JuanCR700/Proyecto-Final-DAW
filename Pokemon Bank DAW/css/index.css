@@ -75,11 +75,12 @@ body {
     background-color: #3f933f;
     border-color: black;
     box-sizing: border-box;
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
+    margin: 20px auto;
     position: relative;
 
 }
